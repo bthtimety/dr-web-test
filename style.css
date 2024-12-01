@@ -1,0 +1,365 @@
+* {
+    font-family: "Roboto", serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    img {
+        width: 170px;
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: minmax(0, auto) minmax(320px, 1170px) minmax(0, auto);
+    grid-template-areas:
+        ". content .";
+}
+
+.content {
+    grid-area: content;
+}
+
+.content__first-screen {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 20px;
+        color: #000000;
+    }
+
+    > p {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #666666;
+    }
+}
+
+.button {
+    cursor: pointer;
+    background-color: #69B42E;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #80BF4D;
+}
+
+.first-screen__button {
+    margin-top: 32px;
+    padding: 15px 32px;
+}
+
+.first-screen__img {
+    margin-top: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.first-screen__img::before {
+    content: '';
+    position: absolute;
+    top: 18%;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.img__discount-icon {
+    position: absolute;
+    top: 43%;
+    right: 9%;
+    border-radius: 8px;
+    padding: 5px 9px;
+    background-color: #69B42E;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.content__second-screen {
+    margin-top: 24px;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-screen__text-section {
+    padding: 40px 25px;
+}
+
+.text-section__date {
+    font-size: 20px;
+    font-weight: 500;
+    color: #69B42E;
+}
+
+.text-section__title {
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.text-section__tags {
+    margin-top: 12px;
+
+    ul {
+        display: flex;
+        gap: 12px;
+    }
+}
+
+.text-section__tags-item {
+    list-style: none;
+    padding: 8px 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 80px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #D9D9D9;
+    text-wrap: nowrap;
+}
+
+.text-section__description {
+    margin-top: 12px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.text-section__link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #69B42E;
+}
+
+.second-screen__purchase-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 85%;
+
+    img {
+        margin-top: 41px;
+    }
+}
+
+.purchase-card__title {
+    margin-top: 24px;
+    margin-left: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    align-self: flex-start;
+}
+
+.purchase-card__description {
+    margin-top: 8px;
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    align-self: flex-start;
+    text-wrap: wrap;
+}
+
+.purchase-card__price-section {
+    margin-top: 24px;
+    padding: 24px 32px;
+    display: flex;
+    gap: 65px;
+}
+
+.price__old {
+    font-size: 18px;
+    font-weight: 500;
+    color: #B3B3B3;
+    text-decoration: line-through;
+}
+
+.price__new {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.price-section__description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.purchase-card__button {
+    padding: 15px 36px;
+    /*margin-top: 24px;*/
+    margin-bottom: 40px;
+}
+
+.footer {
+    background-color: #212121;
+}
+
+@media screen and (min-width: 480px) {
+
+    .header__logo {
+        margin-top: 48px;
+
+        img {
+            width: 268px;
+        }
+    }
+
+    .content__first-screen h1 {
+        font-size: 32px;
+    }
+
+    .content__first-screen > p {
+        font-size: 24px;
+    }
+
+    .first-screen__img {
+        margin-top: 32px;
+    }
+
+    .first-screen__img::before {
+        border-radius: 32px;
+    }
+
+    .img__discount-icon {
+        border-radius: 12px;
+        padding: 8px 15px;
+        font-size: 37px;
+    }
+
+    .content__second-screen {
+        margin-top: 32px;
+    }
+
+    .second-screen__text-section {
+        padding: 60px 24px;
+    }
+
+    .purchase-card__title {
+        font-size: 24px;
+    }
+
+    .purchase-card__price-section {
+        gap: 162px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .header__logo {
+        margin-top: 86px;
+    }
+
+    .content__first-screen h1 {
+        font-size: 48px;
+    }
+
+    .first-screen__img {
+        margin-top: 65px;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .first-screen__img::before {
+        top: 10%;
+    }
+
+    .img__discount-icon {
+        right: 15%;
+        border-radius: 22px;
+        padding: 10px 18px;
+        font-size: 46px;
+    }
+
+    .second-screen__text-section {
+        padding: 80px 65px;
+    }
+
+    .text-section__title {
+        font-size: 32px;
+    }
+
+    .text-section__description {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    .header__logo {
+        margin-top: 104px;
+    }
+
+    .content__first-screen h1 {
+        font-size: 86px;
+    }
+
+    .content__first-screen > p {
+        margin-top: 16px;
+        font-size: 40px;
+    }
+
+    .first-screen__img {
+        margin-top: 62px;
+
+        img {
+            width: 90%;
+        }
+    }
+
+    .first-screen__img::before {
+        top: 18%;
+        left: 0;
+        width: 100%;
+    }
+
+    .img__discount-icon {
+        right: 10%;
+        border-radius: 42px;
+        padding: 19px 35px;
+        font-size: 86px;
+    }
+
+    .content__second-screen {
+        margin-top: 64px;
+    }
+
+}
