@@ -33,14 +33,14 @@
         <div class="content__first-screen">
             <h1>Защити свой цифровой мир</h1>
             <p>с Dr. Web Security Space для Android</p>
-            <button class="button first-screen__button">Купить со скидкой</button>
+            <button class="button first-screen__button" id="first-screen__button">Купить со скидкой</button>
             <div class="first-screen__img">
                 <p class="img__discount-icon">-20%</p>
                 <img src="./img/first-screen-img.png" alt="devices">
             </div>
         </div>
 
-        <div class="content__second-screen">
+        <div class="content__second-screen" id="content__second-screen">
             <div class="second-screen__text-section">
                 <p class="text-section__date">С 1 по 15 февраля 2023 года</p>
                 <p class="text-section__title">Dr.Web Security Space для Android</p>
@@ -103,13 +103,17 @@
 
 <footer class="footer">
     <div class="footer__container">
-        <img src="./img/footer-logo.svg" alt="logo">
-        <p class="container__copyright">© «Доктор Веб» 2003–2023</p>
+        <div class="container__copyright">
+            <img src="./img/footer-logo.svg" alt="logo">
+            <p>© «Доктор Веб» 2003–2023</p>
+        </div>
         <p class="container__description">
             «Доктор Веб» — российский производитель антивирусных средств защиты информации под маркой Dr.Web.
         </p>
     </div>
 </footer>
+
+<script src="./main.js"></script>
 
 </body>
 
