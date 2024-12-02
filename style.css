@@ -227,6 +227,66 @@
     margin-bottom: 40px;
 }
 
+.content__third-screen {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.third-screen__block {
+    background-color: #F2F2F2;
+    border-radius: 16px;
+    width: 296px;
+    padding-top: 24px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    ul {
+        margin: 13px 24px;
+    }
+
+    img {
+        width: 120px;
+        position: absolute;
+    }
+}
+
+.third-screen__block:first-child {
+    padding-bottom: 78px;
+
+    img {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.third-screen__block:last-child {
+    padding-bottom: 22px;
+
+    img {
+        bottom: -15px;
+        right: -8px;
+    }
+}
+
+.block__title {
+    margin-left: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.block__item {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+}
+
 .footer {
     background-color: #212121;
     width: 100%;
@@ -296,6 +356,42 @@
         padding: 15px 72px;
     }
 
+    .content__third-screen {
+        margin-top: 32px;
+        gap: 16px;
+    }
+
+    .third-screen__block {
+        border-radius: 32px;
+        width: 100%;
+        padding-top: 32px;
+
+        ul {
+            margin: 13px 32px;
+        }
+
+        img {
+            width: 220px;
+        }
+    }
+
+    .third-screen__block:first-child {
+        padding-bottom: 179px;
+    }
+
+    .third-screen__block:last-child {
+        padding-bottom: 123px;
+
+        img {
+            right: -30px;
+        }
+    }
+
+    .block__title {
+        margin-left: 32px;
+        font-size: 24px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -338,6 +434,33 @@
 
     .text-section__description {
         font-size: 20px;
+    }
+
+    .content__third-screen {
+        margin-bottom: 64px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .third-screen__block {
+        width: 50%;
+
+        img {
+            width: 340px;
+        }
+    }
+
+    .third-screen__block:first-child {
+        padding-bottom: 507px;
+    }
+
+    .third-screen__block:last-child {
+        padding-bottom: 451px;
+
+        img {
+            bottom: 0;
+            right: 0;
+        }
     }
 
 }
@@ -391,6 +514,20 @@
 
     .second-screen__purchase-card {
         margin: 0;
+    }
+
+    .content__third-screen {
+        margin-top: 64px;
+        margin-bottom: 166px;
+        gap: 32px;
+    }
+
+    .block__title {
+        font-size: 32px;
+    }
+
+    .block__item {
+        font-size: 20px;
     }
 
 }
